@@ -1,0 +1,49 @@
+{
+  "name": "Kuzmiankou Anatoli",
+  "skills": [ "JavaScript", "ES5", "ES6", "CSS3", "HTML5", "jQuery", "Bootstrap" ],
+  "overview": "I have been programming for seven years. Have knowledge in the following areas: Markup languages: HTML, HTML5 XML; JavaScript, jQuery, JSP, ES5, ES6; CSS, CSS3. Net technologies: ADO.NET, ASP.NET, Windows Forms, WPF. Java platforms and technologies: JSP, JDBC, Servlet. Data base: mysql. Have experience with programming languages C, С++, С#, Java, Lisp, php. Have experience with js and css frameworks and technologies: jQuery, Ext.js, Bootstrap, Dojo.js, React",
+  "projects": [
+    {
+      "title": "A personal account of the entrant",
+      "skills": ["JavaScript", "jQuery", "php", "mysql"],
+      "date": "JUNE 2016",
+      "overview": "Automatic system «A personal account of the entrant GGTU name’s P. O. Suchogo»",
+      "link": "http://entrant.gstu.by"
+    }, {
+      "title": "MSF",
+      "skills": ["php", "jQuery", "CSS3", "HTML5", "CMS Drupal"],
+      "date": "JUNE 2017",
+      "overview": "Create Theme for CMS Drupal",
+      "link": "http://msf.gstu.by"
+    }, {
+      "title": "FDP",
+      "skills": ["php", "jQuery", "CSS3", "HTML5", "CMS Drupal"],
+      "date": "JUNE 2017",
+      "overview": "My client wanted new site for faculty of pre-University training. I build a front-end page and create new theme for CMS Drupal.",
+      "link": "http://fdp.gstu.by"
+    }
+  ],
+  "employment": [
+    {
+      "company": "Gomel state technical University named after P. O. Sukhoi",
+      "position": "Engineer programmer",
+      "start": "AUGUST 2015",
+      "end": "" 
+    }
+  ],
+  "education": [
+    { 
+      "school": "Gomel state technical University named after P. O. Sukhoi",
+      "degree": "Bachelor of Engineering (B.Eng.)",
+      "study": "Modeling tripping when drilling oil wells",
+      "start": "2009",
+      "end": "2014"
+    }, { 
+      "school": "Gomel state technical University named after P. O. Sukhoi",
+      "degree": "Master of Computer Applications (M.C.A.)",
+      "study": "Simulation of the effects of extra spatial dimensions in the process B",
+      "start": "2014",
+      "end": "2015"
+    }
+  ]
+}

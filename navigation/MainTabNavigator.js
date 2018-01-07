@@ -12,13 +12,22 @@ import SettingsScreen from '../screens/SettingsScreen';
 export default TabNavigator(
   {
     Home: {
-      screen: HomeScreen,
+      screen: HomeScreen
+    },
+    AboutMe: {
+      screen: HomeScreen
+    },
+    MyStuding: {
+      screen: HomeScreen
+    },
+    MyStudingProject: {
+      screen: HomeScreen
     },
     Links: {
-      screen: LinksScreen,
+      screen: LinksScreen
     },
     Settings: {
-      screen: SettingsScreen,
+      screen: SettingsScreen
     },
   },
   {
@@ -30,8 +39,26 @@ export default TabNavigator(
           case 'Home':
             iconName =
               Platform.OS === 'ios'
-                ? `ios-information-circle${focused ? '' : '-outline'}`
-                : 'md-information-circle';
+                ? `ios-home${focused ? '' : '-outline'}`
+                : 'md-home';
+            break;
+          case 'AboutMe':
+            iconName =
+              Platform.OS === 'ios'
+                ? `ios-home${focused ? '' : '-outline'}`
+                : 'md-home';
+            break;
+          case 'MyStuding':
+            iconName =
+              Platform.OS === 'ios'
+                ? `ios-home${focused ? '' : '-outline'}`
+                : 'md-home';
+            break;
+          case 'MyStudingProject':
+            iconName =
+              Platform.OS === 'ios'
+                ? `ios-home${focused ? '' : '-outline'}`
+                : 'md-home';
             break;
           case 'Links':
             iconName = Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link';
