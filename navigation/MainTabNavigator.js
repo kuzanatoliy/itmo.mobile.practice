@@ -46,8 +46,8 @@ export default TabNavigator(
           case 'AboutMe':
             iconName =
               Platform.OS === 'ios'
-                ? `ios-home${focused ? '' : '-outline'}`
-                : 'md-home';
+                ? `ios-information-circle${focused ? '' : '-outline'}`
+                : 'md-information-circle';
             break;
           case 'MyStuding':
             iconName =

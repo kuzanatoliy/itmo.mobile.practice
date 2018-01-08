@@ -9,8 +9,7 @@ class Education extends React.Component {
         <Text>{ school }</Text>
         <Text>{ degree }</Text>
         <Text>{ study }</Text>
-        <Text>{ start }</Text>
-        <Text>{ end }</Text>
+        <Text>{ `${ start } - ${ end || 'NOW' }` }</Text>
       </View>
     );
   }

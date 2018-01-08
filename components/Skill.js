@@ -3,10 +3,10 @@ import { View, Text, StyleSheet } from 'react-native';
 
 class Skill extends React.Component {
   render() {
-    const { value } = this.props.value;
+    const { value } = this.props;
     return (
-      <View>
-        <Text>{ value }</Text>
+      <View style={ styles.container }>
+        <Text style={ styles.text }>{ value }</Text>
       </View>
     );
   }
@@ -18,5 +18,11 @@ const styles = StyleSheet.create({
     margin: 5,
     borderRadius: 4,
     backgroundColor: '#005068'
+  }, 
+  text: {
+    color: 'white',
+    fontSize: 13
   }
 });
+
+export default Skill;

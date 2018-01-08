@@ -11,7 +11,8 @@ export default class HomeScreen extends React.Component {
       <View style={ styles.container }>
         <ScrollView style={ styles.container } contentContainerStyle={ styles.contentContainer }>
           <Image style={ styles.image } source={ require('../data/images/Icon.jpg') }/>
-          <Text style={ styles.title }>Kuzmiankou Anatoli</Text>
+          <Text style={ styles.title }>Kuzmiankou</Text>
+          <Text style={ styles.title }>Anatoli</Text>
           <Text style={ styles.text }>UX Developer (EPAM Systems Inc)</Text>
         </ScrollView>
       </View>
@@ -38,8 +39,8 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   image: {
-    width: 250,
-    height: 250,
-    borderRadius: 125
+    width: 200,
+    height: 200,
+    borderRadius: 100
   }
 });
