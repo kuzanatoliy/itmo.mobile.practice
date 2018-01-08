@@ -8,6 +8,7 @@ import Colors from '../constants/Colors';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import AboutMeScreen from '../screens/AboutMeScreen';
 
 export default TabNavigator(
   {
@@ -15,7 +16,7 @@ export default TabNavigator(
       screen: HomeScreen
     },
     AboutMe: {
-      screen: HomeScreen
+      screen: AboutMeScreen
     },
     MyStuding: {
       screen: HomeScreen
