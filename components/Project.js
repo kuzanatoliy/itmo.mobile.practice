@@ -28,7 +28,7 @@ class Project extends React.Component {
   }
 }
 
-const styles = {
+const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     color: '#005068'
@@ -47,6 +47,6 @@ const styles = {
     color: '#005068',
     fontSize: 12
   }
-}
+});
 
 export default Project;

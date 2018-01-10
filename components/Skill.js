@@ -14,14 +14,15 @@ class Skill extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 5,
-    margin: 5,
+    padding: 2,
+    paddingHorizontal: 4,
+    margin: 2,
     borderRadius: 4,
     backgroundColor: '#005068'
   }, 
   text: {
     color: 'white',
-    fontSize: 13
+    fontSize: 10
   }
 });
 

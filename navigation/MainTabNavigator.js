@@ -6,9 +6,11 @@ import { TabNavigator, TabBarBottom } from 'react-navigation';
 import Colors from '../constants/Colors';
 
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
 import AboutMeScreen from '../screens/AboutMeScreen';
+import MyStudingScreen from '../screens/MyStudingScreen';
+import MyStudingProjectScreen from '../screens/MyStudingProjectScreen';
+import MyPlansScreen from '../screens/MyPlansScreen';
+import ContactsScreen from '../screens/ContactsScreen';
 
 export default TabNavigator(
   {
@@ -19,16 +21,16 @@ export default TabNavigator(
       screen: AboutMeScreen
     },
     MyStuding: {
-      screen: HomeScreen
+      screen: MyStudingScreen
     },
     MyStudingProject: {
-      screen: HomeScreen
+      screen: MyStudingProjectScreen
     },
-    Links: {
-      screen: LinksScreen
+    MyPlans: {
+      screen: MyPlansScreen
     },
-    Settings: {
-      screen: SettingsScreen
+    Contacts: {
+      screen: ContactsScreen
     },
   },
   {
@@ -52,21 +54,27 @@ export default TabNavigator(
           case 'MyStuding':
             iconName =
               Platform.OS === 'ios'
-                ? `ios-home${focused ? '' : '-outline'}`
-                : 'md-home';
+                ? `ios-albums${focused ? '' : '-outline'}`
+                : 'md-albums';
             break;
           case 'MyStudingProject':
             iconName =
               Platform.OS === 'ios'
-                ? `ios-home${focused ? '' : '-outline'}`
-                : 'md-home';
+                ? `ios-paper${focused ? '' : '-outline'}`
+                : 'md-paper';
             break;
-          case 'Links':
-            iconName = Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link';
-            break;
-          case 'Settings':
+          case 'MyPlans':
             iconName =
-              Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options';
+              Platform.OS === 'ios'
+                ? `ios-map${focused ? '' : '-outline'}`
+                : 'md-map';
+            break;
+          case 'Contacts':
+            iconName =
+              Platform.OS === 'ios'
+                ? `ios-mail${focused ? '' : '-outline'}`
+                : 'md-mail';
+            break;
         }
         return (
           <Ionicons

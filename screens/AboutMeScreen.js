@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text, StyleSheet } from 'react-native';
 import data from '../data/about-me.json';
 import Skill from '../components/Skill';
-//import Education from '../components/Project';
-//import Employment from '../components/Employment';
+import Education from '../components/Education';
+import Employment from '../components/Employment';
 import Project from '../components/Project';
 
 class AboutMeScreen extends Component {
   static navigationOptions = {
-    header: 'About me',
+    title: 'About me',
   };
 
   skillCreate(item) {
@@ -19,6 +19,14 @@ class AboutMeScreen extends Component {
     return <Project data={ item } key={ index }/>
   }
 
+  employmentCreatee(item, index) {
+    return <Employment data={ item } key={ index }/>
+  }
+
+  educationCreate(item, index) {
+    return <Education data={ item } key={ index }/>
+  }
+
   render() {
     return(
       <View style={ styles.container }>
@@ -26,8 +34,19 @@ class AboutMeScreen extends Component {
           <Text style={ styles.title1 }>{ `My name is ${ data.name }` }</Text>
           <Text style={ styles.title2 }>My favorit skills:</Text>
           <View style={ styles.row }>{ data.skills.map( item => this.skillCreate(item) ) }</View>
-          <Text style={ styles.title2 }>Projects:</Text>
-          <View>{ data.projects.map( (item, index) => this.projectCreate(item, index) ) }</View>
+          <Text>{ data.overview }</Text>
+          <View style={ styles.section }>
+            <Text style={ styles.title2 }>Projects:</Text>
+            <View>{ data.projects.map( (item, index) => this.projectCreate(item, index) ) }</View>
+          </View>
+          <View style={ styles.section }>
+            <Text style={ styles.title2 }>Employment:</Text>
+            <View>{ data.employment.map( (item, index) => this.employmentCreatee(item, index) ) }</View>
+          </View>
+          <View style={ styles.section }>
+            <Text style={ styles.title2 }>Education:</Text>
+            <View>{ data.education.map( (item, index) => this.educationCreate(item, index) ) }</View>
+          </View>
         </ScrollView>
       </View>
     );
@@ -52,6 +71,9 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row'
+  },
+  section: {
+    marginTop: 10
   }
 });
 
